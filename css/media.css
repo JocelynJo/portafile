@@ -1,60 +1,85 @@
 .hide-mobile {
-	display: none;
+    display: none;
 }
 
 @media  (max-width : 500px) {
-	.hide-desktop {
-		display: none;
-	}
 
-	.show-mobile {
-		display: block;
-	}
-	.jo{
-		width: 30%;
-	
-		border:#FFBE0C solid 5px;
-	}
-	.sobremi{
-		height: 20%;
-		background: #FFBE0C;
-	}
-	.experiencia{
+    .dibujo {
+        background-image: url('img/animacion/animacion-responsivo/ojo_copia.png');
+        height: 135px;
+        width: 300px;
+        margin: 30% auto 0;
 
-		height: 30%;
-		background: #333437 ;
-		margin-top: -1%;
 
-	}
-	.desaparece{
-		display: none;
-		
-	}
-	.aparece{
-		display: block;
-		
-	}
-	.hola{
-		margin-top: 5%;
-	}
-	.lente-sol{
-		margin-top: 4%;
-		width: 60%;
-	}
-	.menu{
-		margin-top: 2%;
-	}
-	.title{
-		font-size: 150%;
-	}
-	
-	.experiencia{
-		height: 50%;
-	}
-	
-	.item{
-		width: 10%;
-	}
+
+
+        -webkit-animation: ojo 3s steps(2, end) infinite;
+        animation: ojo 3s steps(2, end) infinite;
+    }
+
+    @-webkit-keyframes ojo{
+        from { background-position: 0 0; }
+        to { background-position: 1231px 0; }
+    }
+    @keyframes ojo{
+        from { background-position: 0 0; }
+        to { background-position: 1231px 0; }
+    }
+    .hide-desktop {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+    .jo{
+        width: 30%;
+
+        border:#FFBE0C solid 5px;
+    }
+    .sobremi{
+        height: 20%;
+        background: #FFBE0C;
+    }
+    .experiencia{
+
+        height: 30%;
+        background: #333437 ;
+        margin-top: -1%;
+
+    }
+    .imagen{
+        margin-left: 6%;
+    }
+    .desaparece{
+        display: none;
+        
+    }
+    .aparece{
+        display: block;
+        
+    }
+    .hola{
+        margin-top: 5%;
+    }
+    .lente-sol{
+        margin-top: 4%;
+        width: 60%;
+    }
+    .menu{
+        margin-top: 2%;
+    }
+    .title{
+        font-size: 150%;
+    }
+    
+    .experiencia{
+        height: 50%;
+    }
+    
+    .item{
+        width: 10%;
+    }
 
 
 }
